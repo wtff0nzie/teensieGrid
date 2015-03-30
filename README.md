@@ -1,7 +1,7 @@
 # tnyGrid
-## A smaller CSS grid *only* 280 bytes minified and gzipped!
+### A smaller CSS grid *only* 280 bytes minified and gzipped!
 
-### Markup patterns
+#### Markup patterns
 
 Two column row:
 
@@ -19,9 +19,9 @@ Four column row:
         <div class="col">Contents of fourth column.</div>
     </div>
 
-See demo/index.html for more detail.
+See demo/index.html for more examples.
 
-### Support
+#### Support
 
 * IE9+
 * Firefox
