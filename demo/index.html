@@ -11,11 +11,28 @@
             color:#555;
             font:62.5% 'HelveticaNeue-UltraLight','Helvetica Neue UltraLight','Helvetica Neue',Helvetica,Roboto,Arial,sans-serif;
             line-height:1em;
+            min-height:100%;
             -webkit-font-smoothing:antialiased;
             -moz-osx-font-smoothing:grayscale;
             -ms-touch-action:manipulation;
             touch-action:manipulation;
             -webkit-overflow-scrolling:touch
+        }
+        h1{
+            font-family:'HelveticaNeue-UltraLight','Helvetica Neue UltraLight','Helvetica Neue',Helvetica,Roboto,Arial,sans-serif;
+            font-size:5rem;
+            font-weight:100;
+            margin:80px 0 60px;
+            text-align:center;
+            text-shadow:1px 1px 0 #fff
+        }
+        h1 span{
+            font-weight:300
+        }
+        h1 dfn{
+            border:0;
+            cursor:help;
+            font-style:normal
         }
         .col{
             background:rgba(0,0,0,.05);
@@ -32,33 +49,22 @@
             color:#fff;
             display:inline-block;
             line-height:1.4em;
-            margin-left:2px;
+            margin-left:4px;
             padding:4px 6px;
             text-shadow:0 0 1px #000
         }
     </style>
 </head>
 <body>
-    <div class="row col-1">
-        <div class="col">.row.col-1 .col <strong>column 1</strong></div>
-    </div>
+    <h1>TnyGrid <span><dfn title="Cascading Style Sheets">CSS</dfn> grid framework</span></h1>
 
-    <div class="row col-2">
-        <div class="col">.row.col-2 .col <strong>column 1</strong></div>
-        <div class="col">.row.col-2 .col <strong>column 2</strong></div>
-    </div>
-
-    <div class="row col-3">
-        <div class="col">.row.col-3 .col <strong>column 1</strong></div>
-        <div class="col">.row.col-3 .col <strong>column 2</strong></div>
-        <div class="col">.row.col-3 .col <strong>column 3</strong></div>
-    </div>
-
-    <div class="row col-4">
-        <div class="col">.row.col-4 .col <strong>column 1</strong></div>
-        <div class="col">.row.col-4 .col <strong>column 2</strong></div>
-        <div class="col">.row.col-4 .col <strong>column 3</strong></div>
-        <div class="col">.row.col-4 .col <strong>column 4</strong></div>
+    <div class="row col-6">
+        <div class="col">.row.col-6 .col <strong>column 1</strong></div>
+        <div class="col">.row.col-6 .col <strong>column 2</strong></div>
+        <div class="col">.row.col-6 .col <strong>column 3</strong></div>
+        <div class="col">.row.col-6 .col <strong>column 4</strong></div>
+        <div class="col">.row.col-6 .col <strong>column 5</strong></div>
+        <div class="col">.row.col-6 .col <strong>column 6</strong></div>
     </div>
 
     <div class="row col-5">
@@ -69,13 +75,27 @@
         <div class="col">.row.col-5 .col <strong>column 5</strong></div>
     </div>
 
-    <div class="row col-6">
-        <div class="col">.row.col-6 .col <strong>column 1</strong></div>
-        <div class="col">.row.col-6 .col <strong>column 2</strong></div>
-        <div class="col">.row.col-6 .col <strong>column 3</strong></div>
-        <div class="col">.row.col-6 .col <strong>column 4</strong></div>
-        <div class="col">.row.col-6 .col <strong>column 5</strong></div>
-        <div class="col">.row.col-6 .col <strong>column 6</strong></div>
+    <div class="row col-4">
+        <div class="col">.row.col-4 .col <strong>column 1</strong></div>
+        <div class="col">.row.col-4 .col <strong>column 2</strong></div>
+        <div class="col">.row.col-4 .col <strong>column 3</strong></div>
+        <div class="col">.row.col-4 .col <strong>column 4</strong></div>
     </div>
+
+    <div class="row col-3">
+        <div class="col">.row.col-3 .col <strong>column 1</strong></div>
+        <div class="col">.row.col-3 .col <strong>column 2</strong></div>
+        <div class="col">.row.col-3 .col <strong>column 3</strong></div>
+    </div>
+
+    <div class="row col-2">
+        <div class="col">.row.col-2 .col <strong>column 1</strong></div>
+        <div class="col">.row.col-2 .col <strong>column 2</strong></div>
+    </div>
+
+    <div class="row col-1">
+        <div class="col">.row.col-1 .col <strong>column 1</strong></div>
+    </div>
+
 </body>
 </html>

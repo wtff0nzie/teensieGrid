@@ -1,7 +1,5 @@
 # teensieGrid
-## A smaller CSS grid *280 bytes minified and gZipped*!
-
-
+## A smaller CSS grid *only* 280 bytes minified and gzipped!
 
 ## Markup pattern
 
@@ -10,10 +8,11 @@
         <div class="col">Contents of second column.</div>
     </div>
 
+See demo/index.html for more detail.
 
 ## Support
 
 * IE9+
 * Firefox
-* Chrom
+* Chrome (desktop / mobile)
 * Safari (and iOS Safari)

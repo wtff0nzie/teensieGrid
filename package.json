@@ -1,0 +1,20 @@
+{
+  "name": "tnyGrid",
+  "version": "0.0.1",
+  "description": "Tiny CSS grid framework",
+  "keywords": [
+    "css",
+    "grid"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wtff0nzie/tnyGrid"
+  },
+  "homepage": "https://github.com/wtff0nzie/tnyGrid",
+  "bugs": {
+    "url": "https://github.com/wtff0nzie/tnyGrid/issues"
+  },
+  "author": "Dez Iddon",
+  "license": "MIT",
+  "main": "tnyGrid.css"
+}
