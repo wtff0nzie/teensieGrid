@@ -1,16 +1,27 @@
-# teensieGrid
+# tnyGrid
 ## A smaller CSS grid *only* 280 bytes minified and gzipped!
 
-## Markup pattern
+### Markup patterns
+
+Two column row:
 
     <div class="row col-2">
         <div class="col">Contents of first column.</div>
         <div class="col">Contents of second column.</div>
     </div>
 
+Four column row:
+
+    <div class="row col-4">
+        <div class="col">Contents of first column.</div>
+        <div class="col">Contents of second column.</div>
+        <div class="col">Contents of third column.</div>
+        <div class="col">Contents of fourth column.</div>
+    </div>
+
 See demo/index.html for more detail.
 
-## Support
+### Support
 
 * IE9+
 * Firefox
