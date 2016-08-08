@@ -5,6 +5,7 @@
     <title>tnyGrid</title>
     <link rel="stylesheet" type="text/css" href="../tnyGrid.css">
     <style>
+        /* Decorate CSS, please ignore! */
         html{
             background:rgba(0,0,0,.01);
             background-image:linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.01) 50%,rgba(0,0,0,.05) 70%,rgba(0,0,0,.12) 100%);
@@ -22,6 +23,7 @@
             font-family:'HelveticaNeue-UltraLight','Helvetica Neue UltraLight','Helvetica Neue',Helvetica,Roboto,Arial,sans-serif;
             font-size:5rem;
             font-weight:100;
+            line-height:1.1em;
             margin:80px 0 60px;
             text-align:center;
             text-shadow:1px 1px 0 #fff
@@ -39,9 +41,14 @@
             border:1px rgba(0,0,0,.1) solid;
             border-radius:3px;
             font-size:1.4rem;
-            padding:20px;
+            overflow:hidden;
+            padding:20px 0;
             text-align:center;
-            text-shadow:0 1px 0 #fff
+            text-shadow:0 1px 0 #fff;
+            transition:.6s
+        }
+        .col:hover{
+            overflow:visible
         }
         .col strong{
             background:rgba(0,0,0,.3);
@@ -49,7 +56,6 @@
             color:#fff;
             display:inline-block;
             line-height:1.4em;
-            margin-left:4px;
             padding:4px 6px;
             text-shadow:0 0 1px #000
         }
@@ -58,44 +64,46 @@
 <body>
     <h1>TnyGrid <span><dfn title="Cascading Style Sheets">CSS</dfn> grid framework</span></h1>
 
-    <div class="row col-6">
-        <div class="col">.row.col-6 .col <strong>column 1</strong></div>
-        <div class="col">.row.col-6 .col <strong>column 2</strong></div>
-        <div class="col">.row.col-6 .col <strong>column 3</strong></div>
-        <div class="col">.row.col-6 .col <strong>column 4</strong></div>
-        <div class="col">.row.col-6 .col <strong>column 5</strong></div>
-        <div class="col">.row.col-6 .col <strong>column 6</strong></div>
-    </div>
+    <div class="col col-6of12 col-1of12:desktop"></div>
+    <div class="col col-3of12 col-1of12:desktop"></div>
+    <div class="col col-3of12 col-1of12:desktop"></div>
+    <div class="col col-6of12 col-1of12:desktop"></div>
+    <div class="col col-6of12 col-1of12:desktop"></div>
+    <div class="col col-3of12 col-1of12:desktop"></div>
+    <div class="col col-3of12 col-1of12:desktop"></div>
+    <div class="col col-3of12 col-1of12:desktop"></div>
+    <div class="col col-3of12 col-1of12:desktop"></div>
+    <div class="col col-6of12 col-1of12:desktop"></div>
+    <div class="col col-6of12 col-1of12:desktop"></div>
+    <div class="col col-12of12 col-1of12:desktop"></div>
 
-    <div class="row col-5">
-        <div class="col">.row.col-5 .col <strong>column 1</strong></div>
-        <div class="col">.row.col-5 .col <strong>column 2</strong></div>
-        <div class="col">.row.col-5 .col <strong>column 3</strong></div>
-        <div class="col">.row.col-5 .col <strong>column 4</strong></div>
-        <div class="col">.row.col-5 .col <strong>column 5</strong></div>
-    </div>
+    <div class="col col-12of12 col-12of12:desktop"></div>
 
-    <div class="row col-4">
-        <div class="col">.row.col-4 .col <strong>column 1</strong></div>
-        <div class="col">.row.col-4 .col <strong>column 2</strong></div>
-        <div class="col">.row.col-4 .col <strong>column 3</strong></div>
-        <div class="col">.row.col-4 .col <strong>column 4</strong></div>
-    </div>
+    <div class="col col-4of12 col-2of12:desktop"></div>
+    <div class="col col-4of12 col-2of12:desktop"></div>
+    <div class="col col-4of12 col-2of12:desktop"></div>
+    <div class="col col-4of12 col-2of12:desktop"></div>
+    <div class="col col-4of12 col-2of12:desktop"></div>
+    <div class="col col-4of12 col-2of12:desktop"></div>
 
-    <div class="row col-3">
-        <div class="col">.row.col-3 .col <strong>column 1</strong></div>
-        <div class="col">.row.col-3 .col <strong>column 2</strong></div>
-        <div class="col">.row.col-3 .col <strong>column 3</strong></div>
-    </div>
+    <div class="col col-3of12 col-3of12:desktop"></div>
+    <div class="col col-3of12 col-3of12:desktop"></div>
+    <div class="col col-3of12 col-3of12:desktop"></div>
+    <div class="col col-3of12 col-3of12:desktop"></div>
 
-    <div class="row col-2">
-        <div class="col">.row.col-2 .col <strong>column 1</strong></div>
-        <div class="col">.row.col-2 .col <strong>column 2</strong></div>
-    </div>
+    <div class="col col-4of12 col-4of12:desktop"></div>
+    <div class="col col-8of12 col-8of12:desktop"></div>
 
-    <div class="row col-1">
-        <div class="col">.row.col-1 .col <strong>column 1</strong></div>
-    </div>
+    <div class="col col-5of12 col-5of12:desktop"></div>
+    <div class="col col-7of12 col-7of12:desktop"></div>
+
+<script>
+    (function () {
+        [].slice.call(document.querySelectorAll('.col')).forEach(function (el) {
+          el.innerHTML = '<strong>' + el.className + '</strong>';
+        });
+    } ());
+</script>
 
 </body>
 </html>
